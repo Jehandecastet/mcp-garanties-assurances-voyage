@@ -1,0 +1,17 @@
+[
+  {
+    "flightNumber": "IB 4321",
+    "flightDate": "2025-02-12",
+    "submittedAt": "2025-04-04T07:27:45.144Z"
+  },
+  {
+    "flightNumber": "IB 4321",
+    "flightDate": "2025-02-12",
+    "submittedAt": "2025-04-04T07:27:45.161Z"
+  },
+  {
+    "flightNumber": "IB 4444",
+    "flightDate": "2025-02-14",
+    "submittedAt": "2025-04-04T07:38:50.111Z"
+  }
+]

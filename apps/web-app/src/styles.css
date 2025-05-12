@@ -1,0 +1,8 @@
+/* Importe les styles de base de Tailwind */
+@tailwind base;
+
+/* Importe les styles des composants de Tailwind */
+@tailwind components;
+
+/* Importe les classes utilitaires de Tailwind */
+@tailwind utilities;

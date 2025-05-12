@@ -1,0 +1,92 @@
+[
+  {
+    "code": "CDG",
+    "name": "Paris Charles de Gaulle",
+    "city": "Paris",
+    "country": "France",
+    "iso_country": "FR",
+    "lat": 49.0097,
+    "lon": 2.5479
+  },
+  {
+    "code": "ORY",
+    "name": "Paris Orly",
+    "city": "Paris",
+    "country": "France",
+    "iso_country": "FR",
+    "lat": 48.7278,
+    "lon": 2.3791
+  },
+  {
+    "code": "JFK",
+    "name": "John F. Kennedy International",
+    "city": "New York",
+    "country": "United States",
+    "iso_country": "US",
+    "lat": 40.6413,
+    "lon": -73.7781
+  },
+  {
+    "code": "LHR",
+    "name": "London Heathrow",
+    "city": "London",
+    "country": "United Kingdom",
+    "iso_country": "GB",
+    "lat": 51.47,
+    "lon": -0.4543
+  },
+  {
+    "code": "FRA",
+    "name": "Frankfurt am Main",
+    "city": "Frankfurt",
+    "country": "Germany",
+    "iso_country": "DE",
+    "lat": 50.0379,
+    "lon": 8.5622
+  },
+  {
+    "code": "DXB",
+    "name": "Dubai International",
+    "city": "Dubai",
+    "country": "United Arab Emirates",
+    "iso_country": "AE",
+    "lat": 25.2532,
+    "lon": 55.3657
+  },
+  {
+    "code": "HND",
+    "name": "Tokyo Haneda",
+    "city": "Tokyo",
+    "country": "Japan",
+    "iso_country": "JP",
+    "lat": 35.5494,
+    "lon": 139.7798
+  },
+  {
+    "code": "SIN",
+    "name": "Singapore Changi",
+    "city": "Singapore",
+    "country": "Singapore",
+    "iso_country": "SG",
+    "lat": 1.3644,
+    "lon": 103.9915
+  },
+  {
+    "code": "LAX",
+    "name": "Los Angeles International",
+    "city": "Los Angeles",
+    "country": "United States",
+    "iso_country": "US",
+    "lat": 33.9416,
+    "lon": -118.4085
+  },
+  {
+    "code": "SYD",
+    "name": "Sydney Kingsford Smith",
+    "city": "Sydney",
+    "country": "Australia",
+    "iso_country": "AU",
+    "lat": -33.9399,
+    "lon": 151.1753
+  }
+]

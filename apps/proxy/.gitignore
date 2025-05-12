@@ -1,0 +1,29 @@
+# Node modules
+node_modules
+.next
+dist
+out
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS
+.DS_Store
+
+# Env
+.env*
+!.env.example
+
+# IDE
+.vscode
+.idea
+
+# Optional npm cache directory
+.npm
+
+# Build output
+build
+
