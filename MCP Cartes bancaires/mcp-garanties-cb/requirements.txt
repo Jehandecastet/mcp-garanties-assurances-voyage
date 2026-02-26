@@ -1,0 +1,14 @@
+# MCP Server
+fastmcp>=2.0.0
+
+# Data processing
+pandas>=2.0.0
+openpyxl>=3.1.0
+
+# PDF extraction
+# anthropic>=0.40.0     # Alternative: extraction via Claude
+google-genai>=1.0.0     # Pour extraction via Gemini
+
+# Utilities
+python-dotenv>=1.0.0
+rich>=13.0.0            # Pretty console output

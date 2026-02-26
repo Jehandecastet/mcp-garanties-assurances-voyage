@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "garanties-cb": {
+      "command": "python",
+      "args": ["-m", "server.server"],
+      "env": {
+        "PYTHONPATH": "."
+      }
+    }
+  }
+}
