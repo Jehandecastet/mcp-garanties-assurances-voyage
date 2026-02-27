@@ -21,12 +21,18 @@ from rich.console import Console
 load_dotenv()
 console = Console()
 
-EXCEL_PATH = Path("data/Migration_INEKTO_V2_2_CORRIGE.xlsx")
 OUTPUT_PATH = Path("data/Migration_INEKTO_V2_2_NORMALISE.xlsx")
 
-# Si le fichier corrigé n'existe pas, utiliser le source
-if not EXCEL_PATH.exists():
-    EXCEL_PATH = Path("data/Migration_INEKTO_V2_2.xlsx")
+# Chaîne de priorité : enrichi > corrigé > source
+EXCEL_PATH = Path("data/Migration_INEKTO_V2_2_CORRIGE.xlsx")
+for candidate in [
+    Path("data/Migration_INEKTO_V2_2_ENRICHI.xlsx"),
+    Path("data/Migration_INEKTO_V2_2_CORRIGE.xlsx"),
+    Path("data/Migration_INEKTO_V2_2.xlsx"),
+]:
+    if candidate.exists():
+        EXCEL_PATH = candidate
+        break
 
 # ─────────────────────────────────────────────────────────────
 # Mapping de normalisation des garanties orphelines
@@ -190,11 +196,26 @@ def fix_orphan_guarantees(
             renamed += count
 
     dupes_before = len(matrice)
+
+    # Trier pour garder en priorité les lignes avec données enrichies
+    enrichment_cols = [
+        "rc_conditions", "rc_exclusions", "rc_personnes_couvertes",
+        "conditions", "texte_source", "plafond_montant",
+    ]
+    for col in enrichment_cols:
+        if col in matrice.columns:
+            matrice[f"_has_{col}"] = matrice[col].notna().astype(int)
+    sort_cols = [f"_has_{c}" for c in enrichment_cols if f"_has_{c}" in matrice.columns]
+    if sort_cols:
+        matrice = matrice.sort_values(sort_cols, ascending=False)
+
     matrice = matrice.drop_duplicates(subset=["id_carte", "id_garantie", "zone"], keep="first")
+    matrice = matrice.drop(columns=[c for c in matrice.columns if c.startswith("_has_")], errors="ignore")
+
     dupes_removed = dupes_before - len(matrice)
     console.print(f"  [green]{renamed} lignes renommées[/green]", end="")
     if dupes_removed:
-        console.print(f" ({dupes_removed} doublons fusionnés)")
+        console.print(f" ({dupes_removed} doublons fusionnés, lignes enrichies préservées)")
     else:
         console.print()
 
