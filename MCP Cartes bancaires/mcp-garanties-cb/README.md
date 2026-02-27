@@ -1,127 +1,55 @@
-# 🏦 Comparateur de Garanties Cartes Bancaires — Projet IMA
+# 🏦 Comparateur IMA - Serveur MCP (Cartes Bancaires)
 
-Pipeline complet : **PDF → Extraction IA → Base normalisée → Serveur MCP → Agent IA**
+Ce projet contient un serveur MCP (Model Context Protocol) couplé à une base de données d'assurances de cartes bancaires. Il permet à un assistant IA (comme l'Agent Cursor ou Claude Desktop) d'interroger en langage naturel les plafonds, franchises et exclusions juridiques (Responsabilité Civile, Location de voiture, Neige et Montagne, etc.) de plus de 210 cartes bancaires.
 
-## Prérequis
+## 🛠️ Installation pour l'équipe
 
-- Python 3.11+
-- [Cursor](https://cursor.sh) (recommandé) ou VS Code
-- Clé API Anthropic (`ANTHROPIC_API_KEY`) ou Google Gemini (`GEMINI_API_KEY`)
-- Google Drive Desktop (pour synchroniser les PDF)
+Pour tester ce serveur sur votre machine, suivez ces étapes :
 
-## Installation
+**1. Récupérer le projet**
+
+Dans votre terminal, clonez ce dépôt :
 
 ```bash
-# Cloner le projet
-git init mcp-garanties-cb && cd mcp-garanties-cb
+git clone git@github.com:Jehandecastet/mcp-garanties-assurances-voyage.git
+cd mcp-garanties-assurances-voyage
+```
 
-# Environnement virtuel
+**2. Préparer l'environnement Python**
+
+```bash
 python -m venv .venv
-source .venv/bin/activate  # Linux/Mac
-# .venv\Scripts\activate   # Windows
-
-# Dépendances
+source .venv/bin/activate  # Sur Windows : .venv\Scripts\activate
 pip install -r requirements.txt
-
-# Configuration
-cp .env.example .env
-# Remplir les clés API dans .env
 ```
 
-## Structure du projet
+**3. Ajouter votre clé API**
+
+Créez un fichier nommé `.env` à la racine du projet et ajoutez-y la clé API de Gemini (demandez-la à l'administrateur du projet) :
 
 ```
-mcp-garanties-cb/
-├── .cursor/
-│   └── mcp.json                  ← Config MCP pour Cursor
-├── .env.example                  ← Template variables d'environnement
-├── data/
-│   ├── Migration_INEKTO_V2_2.xlsx  ← Base de données source (à copier)
-│   └── pdfs/                       ← Sync Google Drive → dossiers Banque_XXX/
-│       ├── Banque_ALL/
-│       ├── Banque_AMX/
-│       └── ...
-├── extraction/
-│   ├── apply_corrections.py      ← Applique les 27 corrections IMA
-│   ├── normalize.py              ← Normalise statuts, zones, garanties orphelines
-│   ├── extract_from_pdf.py       ← Extraction IA des données manquantes depuis PDF
-│   └── audit.py                  ← Vérifie la qualité de la base
-├── server/
-│   ├── data_loader.py            ← Charge le Excel en structures Python
-│   └── server.py                 ← Serveur MCP exposant les outils
-├── tests/
-│   └── test_pipeline.py          ← Tests du pipeline complet
-├── requirements.txt
-└── README.md
+GEMINI_API_KEY=votre_cle_api_ici
 ```
 
-## Usage
+*Note : Ce fichier est ignoré par Git pour des raisons de sécurité, ne le commitez jamais.*
 
-### Étape 1 — Préparer les données
+## 🚀 Connecter Cursor au Serveur MCP
 
-```bash
-# Copier le fichier Excel dans data/
-cp ~/Drive/PROJET_GARANTIES_CB/Migration_INEKTO_V2_2.xlsx data/
+1. Ouvrez ce dossier avec Cursor.
+2. Allez dans **Settings** > **Features** > **MCP**.
+3. Cliquez sur **+ Add New MCP Server**.
+   - **Name** : `ima-comparateur`
+   - **Type** : `command`
+   - **Command** : `.venv/bin/python -m server.server`
 
-# Synchroniser les PDF (via Google Drive Desktop ou manuellement)
-# Les PDF doivent suivre la structure Banque_XXX/*.pdf
-```
+   > Si cela ne fonctionne pas, utilisez le chemin complet vers l'exécutable Python de votre `.venv` (ex : `/Users/votre-nom/chemin/du/projet/.venv/bin/python -m server.server`).
 
-### Étape 2 — Appliquer les corrections et normaliser
+4. Enregistrez et vérifiez que le voyant passe au vert !
 
-```bash
-# Appliquer les 27 corrections IMA "À CORRIGER"
-python -m extraction.apply_corrections
+## 💡 Exemples de questions à poser à l'Agent (Cmd + L)
 
-# Normaliser (statuts, zones, garanties orphelines)
-python -m extraction.normalize
+Maintenant que le serveur est branché, vous pouvez poser des questions pointues à l'IA :
 
-# Vérifier la qualité
-python -m extraction.audit
-```
-
-### Étape 3 — Extraire les données manquantes des PDF
-
-```bash
-# Extraire les plafonds/franchises manquants (utilise l'API Claude ou Gemini)
-python -m extraction.extract_from_pdf
-
-# Re-vérifier après extraction
-python -m extraction.audit
-```
-
-### Étape 4 — Lancer le serveur MCP
-
-```bash
-# Mode stdio (pour Claude Desktop / Cursor)
-python -m server.server
-
-# Mode SSE (pour intégration HTTP)
-python -m server.server --transport sse --port 8000
-```
-
-### Intégration Cursor
-
-Le fichier `.cursor/mcp.json` est déjà configuré. Cursor détectera automatiquement
-le serveur MCP. Vous pourrez interagir avec vos données de garanties directement
-depuis l'éditeur.
-
-### Intégration Claude Desktop
-
-Ajoutez dans `~/Library/Application Support/Claude/claude_desktop_config.json` (Mac)
-ou `%APPDATA%\Claude\claude_desktop_config.json` (Windows) :
-
-```json
-{
-  "mcpServers": {
-    "garanties-cb": {
-      "command": "python",
-      "args": ["-m", "server.server"],
-      "cwd": "/chemin/vers/mcp-garanties-cb",
-      "env": {
-        "PYTHONPATH": "/chemin/vers/mcp-garanties-cb"
-      }
-    }
-  }
-}
-```
+- *"D'après les données normalisées, quelles sont les exclusions majeures de la Responsabilité Civile pour la carte AXA Visa Infinite ?"*
+- *"Quelle carte entre la BNP Visa Premier et la CIC Mastercard Gold a la meilleure franchise pour la location de voiture ?"*
+- *"Donne-moi les conditions d'activation pour la RC de la carte Caisse d'Épargne Visa Platinum."*
