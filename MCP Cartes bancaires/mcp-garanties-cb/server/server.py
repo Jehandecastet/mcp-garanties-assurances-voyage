@@ -1,22 +1,37 @@
 """
-🏦 Serveur MCP — Comparateur de Garanties Cartes Bancaires IMA
+Serveur MCP — Comparateur de Garanties Cartes Bancaires IMA
 ===============================================================
 
 Expose les données de la base INEKTO via le Model Context Protocol.
 Compatible Claude Desktop, Cursor, et tout client MCP.
 
 Usage :
-    python -m server.server                          # stdio (Claude Desktop / Cursor)
-    python -m server.server --transport sse --port 8000  # HTTP SSE
+    python -m server.server                              # stdio (Claude Desktop / Cursor)
+    python -m server.server --transport http              # Streamable HTTP (Railway)
 """
 
 import json
+import logging
+import os
 import sys
 from typing import Optional
 
 from fastmcp import FastMCP
+from starlette.requests import Request
+from starlette.responses import JSONResponse
 
 from server.data_loader import get_db
+
+# ─────────────────────────────────────────────────────────────
+# Logging
+# ─────────────────────────────────────────────────────────────
+
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s [%(levelname)s] %(name)s: %(message)s",
+)
+logger = logging.getLogger("mcp-garanties-cb")
+
 
 # ─────────────────────────────────────────────────────────────
 # Initialisation
@@ -47,6 +62,24 @@ def _json(data) -> str:
 
 
 # ─────────────────────────────────────────────────────────────
+# HEALTH CHECK
+# ─────────────────────────────────────────────────────────────
+
+
+@mcp.custom_route("/health", methods=["GET"])
+async def health_check(request: Request) -> JSONResponse:
+    try:
+        db = get_db()
+        return JSONResponse({"status": "healthy", "cartes": len(db.cartes)})
+    except Exception as exc:
+        logger.error("Health check failed: %s", exc)
+        return JSONResponse(
+            {"status": "unhealthy", "error": str(exc)},
+            status_code=503,
+        )
+
+
+# ─────────────────────────────────────────────────────────────
 # TOOLS
 # ─────────────────────────────────────────────────────────────
 
@@ -65,9 +98,13 @@ def lister_cartes(
         gamme: Filtrer par gamme (BASIQUE, STANDARD, PREMIUM, ULTRA_PREMIUM)
         banque: Filtrer par nom de banque (recherche partielle)
     """
-    db = get_db()
-    cartes = db.lister_cartes(reseau=reseau, gamme=gamme, banque=banque)
-    return _json({"nombre": len(cartes), "cartes": cartes})
+    try:
+        db = get_db()
+        cartes = db.lister_cartes(reseau=reseau, gamme=gamme, banque=banque)
+        return _json({"nombre": len(cartes), "cartes": cartes})
+    except Exception as exc:
+        logger.exception("Erreur dans lister_cartes")
+        return _json({"erreur": str(exc)})
 
 
 @mcp.tool()
@@ -79,13 +116,19 @@ def details_carte(carte_id: str) -> str:
     Args:
         carte_id: Identifiant de la carte (ex: "BNP-VISA-PREMIER", "CRA-MASTERCARD-GOLD")
     """
-    db = get_db()
-    result = db.details_carte(carte_id)
-    if not result:
-        cartes = db.lister_cartes()
-        ids = [c["id_carte"] for c in cartes[:20]]
-        return _json({"erreur": f"Carte '{carte_id}' non trouvée", "exemples": ids})
-    return _json(result)
+    if not carte_id or not carte_id.strip():
+        return _json({"erreur": "carte_id ne peut pas être vide"})
+    try:
+        db = get_db()
+        result = db.details_carte(carte_id)
+        if not result:
+            cartes = db.lister_cartes()
+            ids = [c["id_carte"] for c in cartes[:20]]
+            return _json({"erreur": f"Carte '{carte_id}' non trouvée", "exemples": ids})
+        return _json(result)
+    except Exception as exc:
+        logger.exception("Erreur dans details_carte")
+        return _json({"erreur": str(exc)})
 
 
 @mcp.tool()
@@ -98,11 +141,19 @@ def comparer_cartes(carte_id_1: str, carte_id_2: str) -> str:
         carte_id_1: Identifiant de la première carte
         carte_id_2: Identifiant de la deuxième carte
     """
-    db = get_db()
-    result = db.comparer(carte_id_1, carte_id_2)
-    if not result:
-        return _json({"erreur": "Une ou plusieurs cartes non trouvées"})
-    return _json(result)
+    if not carte_id_1 or not carte_id_1.strip():
+        return _json({"erreur": "carte_id_1 ne peut pas être vide"})
+    if not carte_id_2 or not carte_id_2.strip():
+        return _json({"erreur": "carte_id_2 ne peut pas être vide"})
+    try:
+        db = get_db()
+        result = db.comparer(carte_id_1, carte_id_2)
+        if not result:
+            return _json({"erreur": "Une ou plusieurs cartes non trouvées"})
+        return _json(result)
+    except Exception as exc:
+        logger.exception("Erreur dans comparer_cartes")
+        return _json({"erreur": str(exc)})
 
 
 @mcp.tool()
@@ -117,13 +168,19 @@ def rechercher_par_situation(situation: str) -> str:
                     "annulation voyage maladie", "location voiture étranger",
                     "vol de bagages", "frais médicaux à l'étranger")
     """
-    db = get_db()
-    resultats = db.rechercher_par_situation(situation)
-    return _json({
-        "situation": situation,
-        "nombre_cartes": len(resultats),
-        "resultats": resultats[:20],  # Limiter à 20 résultats
-    })
+    if not situation or not situation.strip():
+        return _json({"erreur": "situation ne peut pas être vide"})
+    try:
+        db = get_db()
+        resultats = db.rechercher_par_situation(situation)
+        return _json({
+            "situation": situation,
+            "nombre_cartes": len(resultats),
+            "resultats": resultats[:20],
+        })
+    except Exception as exc:
+        logger.exception("Erreur dans rechercher_par_situation")
+        return _json({"erreur": str(exc)})
 
 
 @mcp.tool()
@@ -138,9 +195,19 @@ def simuler_sinistre(carte_id: str, garantie_id: str, montant_eur: float) -> str
                      "responsabilite_civile", "sport")
         montant_eur: Montant du sinistre en euros
     """
-    db = get_db()
-    result = db.simuler_sinistre(carte_id, garantie_id, montant_eur)
-    return _json(result)
+    if not carte_id or not carte_id.strip():
+        return _json({"erreur": "carte_id ne peut pas être vide"})
+    if not garantie_id or not garantie_id.strip():
+        return _json({"erreur": "garantie_id ne peut pas être vide"})
+    if montant_eur < 0:
+        return _json({"erreur": "montant_eur doit être >= 0"})
+    try:
+        db = get_db()
+        result = db.simuler_sinistre(carte_id, garantie_id, montant_eur)
+        return _json(result)
+    except Exception as exc:
+        logger.exception("Erreur dans simuler_sinistre")
+        return _json({"erreur": str(exc)})
 
 
 @mcp.tool()
@@ -149,16 +216,20 @@ def lister_garanties_disponibles() -> str:
     Liste toutes les garanties référencées dans la base avec leur catégorie.
     Utile pour connaître les identifiants exacts des garanties.
     """
-    db = get_db()
-    garanties = []
-    for _, row in db.ref_garanties.iterrows():
-        garanties.append({
-            "id": row["id_garantie"],
-            "nom": row["nom"],
-            "categorie": row["categorie"],
-            "est_binaire": bool(row["est_binaire"]) if not (isinstance(row["est_binaire"], float) and str(row["est_binaire"]) == "nan") else None,
-        })
-    return _json(garanties)
+    try:
+        db = get_db()
+        garanties = []
+        for _, row in db.ref_garanties.iterrows():
+            garanties.append({
+                "id": row["id_garantie"],
+                "nom": row["nom"],
+                "categorie": row["categorie"],
+                "est_binaire": bool(row["est_binaire"]) if not (isinstance(row["est_binaire"], float) and str(row["est_binaire"]) == "nan") else None,
+            })
+        return _json(garanties)
+    except Exception as exc:
+        logger.exception("Erreur dans lister_garanties_disponibles")
+        return _json({"erreur": str(exc)})
 
 
 # ─────────────────────────────────────────────────────────────
@@ -271,7 +342,7 @@ def audit_couverture_voyage(carte_id: str, destination: str, duree_jours: str = 
 
 if __name__ == "__main__":
     transport = "stdio"
-    port = 8000
+    port = int(os.environ.get("PORT", "8000"))
 
     if "--transport" in sys.argv:
         idx = sys.argv.index("--transport")
@@ -279,12 +350,13 @@ if __name__ == "__main__":
 
     if "--port" in sys.argv:
         idx = sys.argv.index("--port")
-        port = int(sys.argv[idx + 1]) if idx + 1 < len(sys.argv) else 8000
+        port = int(sys.argv[idx + 1]) if idx + 1 < len(sys.argv) else port
 
-    import sys as _sys
-    print(f"🏦 Serveur MCP Garanties CB IMA démarré (transport: {transport})", file=_sys.stderr)
+    logger.info("Serveur MCP Garanties CB IMA — transport=%s", transport)
 
-    if transport == "sse":
-        mcp.run(transport=transport, port=port)
+    if transport == "http":
+        mcp.run(transport="http", host="0.0.0.0", port=port)
+    elif transport == "sse":
+        mcp.run(transport="sse", host="0.0.0.0", port=port)
     else:
-        mcp.run(transport=transport)
+        mcp.run(transport="stdio")

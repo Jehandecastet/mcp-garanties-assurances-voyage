@@ -6,6 +6,7 @@ Les données sont chargées en mémoire au démarrage et indexées pour
 des recherches rapides.
 """
 
+import logging
 import os
 from pathlib import Path
 from typing import Optional
@@ -14,6 +15,8 @@ import pandas as pd
 from dotenv import load_dotenv
 
 load_dotenv()
+
+logger = logging.getLogger("mcp-garanties-cb")
 
 # Chercher le fichier le plus récent
 _CANDIDATES = [
@@ -24,12 +27,30 @@ _CANDIDATES = [
     "data/Migration_INEKTO_V2_2.xlsx",
 ]
 
+_REQUIRED_SHEETS = [
+    "CARTES",
+    "MATRICE_GARANTIES",
+    "REF_BANQUES",
+    "REF_GARANTIES",
+    "REF_ZONES",
+    "REF_UNITES",
+    "DEFINITIONS_ASSURES",
+    "CONDITIONS_APPLICATION",
+    "EXCLUSIONS",
+    "DETAILS_RC_LOCATION",
+    "REF_PARTENAIRES",
+]
+
 
 def _find_excel() -> Path:
     for p in _CANDIDATES:
         if p and Path(p).exists():
+            logger.info("Fichier Excel trouvé : %s", p)
             return Path(p)
-    raise FileNotFoundError("Aucun fichier Excel trouvé. Copiez-le dans data/")
+    tested = [p for p in _CANDIDATES if p]
+    raise FileNotFoundError(
+        f"Aucun fichier Excel trouvé. Chemins testés : {tested}"
+    )
 
 
 class GarantiesDB:
@@ -40,22 +61,45 @@ class GarantiesDB:
         self._load()
 
     def _load(self):
-        xls = pd.ExcelFile(self.path)
-        self.cartes = pd.read_excel(xls, "CARTES", header=0)
-        self.matrice = pd.read_excel(xls, "MATRICE_GARANTIES", header=0)
-        self.ref_banques = pd.read_excel(xls, "REF_BANQUES", header=0)
-        self.ref_garanties = pd.read_excel(xls, "REF_GARANTIES", header=0)
-        self.ref_zones = pd.read_excel(xls, "REF_ZONES", header=0)
-        self.ref_unites = pd.read_excel(xls, "REF_UNITES", header=0)
-        self.definitions_assures = pd.read_excel(xls, "DEFINITIONS_ASSURES", header=0)
-        self.conditions = pd.read_excel(xls, "CONDITIONS_APPLICATION", header=0)
-        self.exclusions = pd.read_excel(xls, "EXCLUSIONS", header=0)
-        self.details_rc_location = pd.read_excel(xls, "DETAILS_RC_LOCATION", header=0)
-        self.partenaires = pd.read_excel(xls, "REF_PARTENAIRES", header=0)
+        try:
+            xls = pd.ExcelFile(self.path)
+        except Exception as exc:
+            logger.error("Impossible d'ouvrir le fichier Excel %s : %s", self.path, exc)
+            raise
+
+        missing = [s for s in _REQUIRED_SHEETS if s not in xls.sheet_names]
+        if missing:
+            raise ValueError(
+                f"Feuilles manquantes dans {self.path} : {missing}. "
+                f"Feuilles présentes : {xls.sheet_names}"
+            )
+
+        try:
+            self.cartes = pd.read_excel(xls, "CARTES", header=0)
+            self.matrice = pd.read_excel(xls, "MATRICE_GARANTIES", header=0)
+            self.ref_banques = pd.read_excel(xls, "REF_BANQUES", header=0)
+            self.ref_garanties = pd.read_excel(xls, "REF_GARANTIES", header=0)
+            self.ref_zones = pd.read_excel(xls, "REF_ZONES", header=0)
+            self.ref_unites = pd.read_excel(xls, "REF_UNITES", header=0)
+            self.definitions_assures = pd.read_excel(xls, "DEFINITIONS_ASSURES", header=0)
+            self.conditions = pd.read_excel(xls, "CONDITIONS_APPLICATION", header=0)
+            self.exclusions = pd.read_excel(xls, "EXCLUSIONS", header=0)
+            self.details_rc_location = pd.read_excel(xls, "DETAILS_RC_LOCATION", header=0)
+            self.partenaires = pd.read_excel(xls, "REF_PARTENAIRES", header=0)
+        except Exception as exc:
+            logger.error("Erreur lors de la lecture des feuilles Excel : %s", exc)
+            raise
 
         # Index pour recherche rapide
         self._cartes_idx = {row["id_carte"]: row.to_dict() for _, row in self.cartes.iterrows()}
         self._banques_idx = {row["id_banque"]: row.to_dict() for _, row in self.ref_banques.iterrows()}
+
+        logger.info(
+            "Base chargée : %d cartes, %d banques, %d lignes matrice",
+            len(self.cartes),
+            len(self.ref_banques),
+            len(self.matrice),
+        )
 
     def lister_cartes(
         self,
@@ -314,5 +358,9 @@ _db: Optional[GarantiesDB] = None
 def get_db() -> GarantiesDB:
     global _db
     if _db is None:
-        _db = GarantiesDB()
+        try:
+            _db = GarantiesDB()
+        except Exception:
+            logger.exception("Échec du chargement de la base de données")
+            raise
     return _db
