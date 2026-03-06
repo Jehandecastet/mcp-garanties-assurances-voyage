@@ -1,0 +1,1690 @@
+[
+  {
+    "id_carte": "ALL-VISA-CLASSIC",
+    "banque": "Allianz Banque",
+    "reseau": "VISA",
+    "nom_commercial": "Carte Visa Classic CB Allianz Banque",
+    "gamme": "STANDARD",
+    "gamme_commerciale": "CLASSIC"
+  },
+  {
+    "id_carte": "ALL-VISA-ELECTRON",
+    "banque": "Allianz Banque",
+    "reseau": "VISA",
+    "nom_commercial": "Carte Visa Electron CB Allianz Banque",
+    "gamme": "BASIQUE",
+    "gamme_commerciale": "ELECTRON"
+  },
+  {
+    "id_carte": "ALL-VISA-INFINITE",
+    "banque": "Allianz Banque",
+    "reseau": "VISA",
+    "nom_commercial": "Carte Visa Infinite CB Allianz Banque",
+    "gamme": "ULTRA_PREMIUM",
+    "gamme_commerciale": "INFINITE"
+  },
+  {
+    "id_carte": "ALL-VISA-PREMIER",
+    "banque": "Allianz Banque",
+    "reseau": "VISA",
+    "nom_commercial": "Carte Visa Premier CB Allianz Banque",
+    "gamme": "PREMIUM",
+    "gamme_commerciale": "PREMIER"
+  },
+  {
+    "id_carte": "AMX-AMEX-AFKLM-GOLD",
+    "banque": "American Express",
+    "reseau": "AMEX",
+    "nom_commercial": "Carte AIR FRANCE KLM – American Express Gold",
+    "gamme": "PREMIUM",
+    "gamme_commerciale": "GOLD"
+  },
+  {
+    "id_carte": "AMX-AMEX-AFKLM-PLATINUM",
+    "banque": "American Express",
+    "reseau": "AMEX",
+    "nom_commercial": "Carte AIR FRANCE KLM – American Express Platinum",
+    "gamme": "ULTRA_PREMIUM",
+    "gamme_commerciale": "PLATINUM"
+  },
+  {
+    "id_carte": "AMX-AMEX-AFKLM-SILVER",
+    "banque": "American Express",
+    "reseau": "AMEX",
+    "nom_commercial": "Carte AIR FRANCE KLM – American Express Silver",
+    "gamme": "STANDARD",
+    "gamme_commerciale": "STANDARD"
+  },
+  {
+    "id_carte": "AMX-AMEX-BLUE",
+    "banque": "American Express",
+    "reseau": "AMEX",
+    "nom_commercial": "Carte Blue American Express",
+    "gamme": "STANDARD",
+    "gamme_commerciale": "STANDARD"
+  },
+  {
+    "id_carte": "AMX-AMEX-BUSINESS-AMAZ",
+    "banque": "American Express",
+    "reseau": "AMEX",
+    "nom_commercial": "Carte Amazon Business American Express",
+    "gamme": "STANDARD",
+    "gamme_commerciale": "BUSINESS"
+  },
+  {
+    "id_carte": "AMX-AMEX-BUSINESS-AMAZPRIME",
+    "banque": "American Express",
+    "reseau": "AMEX",
+    "nom_commercial": "Carte Amazon Business Prime American Express",
+    "gamme": "STANDARD",
+    "gamme_commerciale": "BUSINESS"
+  },
+  {
+    "id_carte": "AMX-AMEX-BUSINESS-GOLD",
+    "banque": "American Express",
+    "reseau": "AMEX",
+    "nom_commercial": "Carte Business Gold American Express",
+    "gamme": "PREMIUM",
+    "gamme_commerciale": "GOLD"
+  },
+  {
+    "id_carte": "AMX-AMEX-BUSINESS-GREEN",
+    "banque": "American Express",
+    "reseau": "AMEX",
+    "nom_commercial": "Carte Business Green American Express",
+    "gamme": "STANDARD",
+    "gamme_commerciale": "BUSINESS"
+  },
+  {
+    "id_carte": "AMX-AMEX-BUSINESS-PLATINUM",
+    "banque": "American Express",
+    "reseau": "AMEX",
+    "nom_commercial": "Carte Business Platinum American Express",
+    "gamme": "ULTRA_PREMIUM",
+    "gamme_commerciale": "PLATINUM"
+  },
+  {
+    "id_carte": "AMX-AMEX-CENTURION",
+    "banque": "American Express",
+    "reseau": "AMEX",
+    "nom_commercial": "Carte Centurion American Express",
+    "gamme": "ULTRA_PREMIUM",
+    "gamme_commerciale": "ULTRA_PREMIUM"
+  },
+  {
+    "id_carte": "AMX-AMEX-CORPORATE-GOLD",
+    "banque": "American Express",
+    "reseau": "AMEX",
+    "nom_commercial": "Carte Corporate Gold American Express",
+    "gamme": "PREMIUM",
+    "gamme_commerciale": "GOLD"
+  },
+  {
+    "id_carte": "AMX-AMEX-CORPORATE-GREEN",
+    "banque": "American Express",
+    "reseau": "AMEX",
+    "nom_commercial": "Carte Corporate Green American Express",
+    "gamme": "PREMIUM",
+    "gamme_commerciale": "CORPORATE"
+  },
+  {
+    "id_carte": "AMX-AMEX-CORPORATE-PLATINUM",
+    "banque": "American Express",
+    "reseau": "AMEX",
+    "nom_commercial": "Carte Corporate Platinum American Express",
+    "gamme": "ULTRA_PREMIUM",
+    "gamme_commerciale": "PLATINUM"
+  },
+  {
+    "id_carte": "AMX-AMEX-GOLD",
+    "banque": "American Express",
+    "reseau": "AMEX",
+    "nom_commercial": "Carte Gold American Express",
+    "gamme": "PREMIUM",
+    "gamme_commerciale": "GOLD"
+  },
+  {
+    "id_carte": "AMX-AMEX-GREEN",
+    "banque": "American Express",
+    "reseau": "AMEX",
+    "nom_commercial": "Carte Green American Express",
+    "gamme": "STANDARD",
+    "gamme_commerciale": "STANDARD"
+  },
+  {
+    "id_carte": "AMX-AMEX-PLATINUM",
+    "banque": "American Express",
+    "reseau": "AMEX",
+    "nom_commercial": "Carte Platinum American Express",
+    "gamme": "ULTRA_PREMIUM",
+    "gamme_commerciale": "PLATINUM"
+  },
+  {
+    "id_carte": "AMX-AMEX-PROAF-GOLD",
+    "banque": "American Express",
+    "reseau": "AMEX",
+    "nom_commercial": "Carte Pro Air France KLM - American Express Gold",
+    "gamme": "PREMIUM",
+    "gamme_commerciale": "GOLD"
+  },
+  {
+    "id_carte": "AMX-AMEX-PROAF-PLATINUM",
+    "banque": "American Express",
+    "reseau": "AMEX",
+    "nom_commercial": "Carte Pro Air France KLM - American Express Platinum",
+    "gamme": "ULTRA_PREMIUM",
+    "gamme_commerciale": "PLATINUM"
+  },
+  {
+    "id_carte": "AMX-AMEX-PROAF-SILVER",
+    "banque": "American Express",
+    "reseau": "AMEX",
+    "nom_commercial": "Carte Pro Air France KLM - American Express Silver",
+    "gamme": "STANDARD",
+    "gamme_commerciale": "STANDARD"
+  },
+  {
+    "id_carte": "AXA-VISA-CLASSIC",
+    "banque": "AXA Banque",
+    "reseau": "VISA",
+    "nom_commercial": "CB Visa Classic",
+    "gamme": "STANDARD",
+    "gamme_commerciale": "CLASSIC"
+  },
+  {
+    "id_carte": "AXA-VISA-INFINITE",
+    "banque": "AXA Banque",
+    "reseau": "VISA",
+    "nom_commercial": "Visa Infinite",
+    "gamme": "ULTRA_PREMIUM",
+    "gamme_commerciale": "INFINITE"
+  },
+  {
+    "id_carte": "AXA-VISA-PREMIER",
+    "banque": "AXA Banque",
+    "reseau": "VISA",
+    "nom_commercial": "CB Visa Premier",
+    "gamme": "PREMIUM",
+    "gamme_commerciale": "PREMIER"
+  },
+  {
+    "id_carte": "BFB-VISA-BFORBASIC",
+    "banque": "BforBank",
+    "reseau": "VISA",
+    "nom_commercial": "Carte BforBASIC (Visa)",
+    "gamme": "BASIQUE",
+    "gamme_commerciale": "BASIQUE"
+  },
+  {
+    "id_carte": "BFB-VISA-BFORZEN",
+    "banque": "BforBank",
+    "reseau": "VISA",
+    "nom_commercial": "Carte BforZEN (Visa)",
+    "gamme": "STANDARD",
+    "gamme_commerciale": "STANDARD"
+  },
+  {
+    "id_carte": "BFB-VISA-CLASSIC",
+    "banque": "BforBank",
+    "reseau": "VISA",
+    "nom_commercial": "Carte Visa Classic BforBank",
+    "gamme": "STANDARD",
+    "gamme_commerciale": "CLASSIC"
+  },
+  {
+    "id_carte": "BFB-VISA-INFINITE",
+    "banque": "BforBank",
+    "reseau": "VISA",
+    "nom_commercial": "Carte Visa Infinite BforBank",
+    "gamme": "ULTRA_PREMIUM",
+    "gamme_commerciale": "INFINITE"
+  },
+  {
+    "id_carte": "BFB-VISA-PREMIER",
+    "banque": "BforBank",
+    "reseau": "VISA",
+    "nom_commercial": "Carte Visa Premier BforBank",
+    "gamme": "PREMIUM",
+    "gamme_commerciale": "PREMIER"
+  },
+  {
+    "id_carte": "BKP-VISA-BUSINESS",
+    "banque": "Banque Populaire",
+    "reseau": "VISA",
+    "nom_commercial": "Carte Visa Business Banque Populaire",
+    "gamme": "STANDARD",
+    "gamme_commerciale": "BUSINESS"
+  },
+  {
+    "id_carte": "BKP-VISA-BUSINESS-GOLD",
+    "banque": "Banque Populaire",
+    "reseau": "VISA",
+    "nom_commercial": "Carte Visa Business Gold Banque Populaire",
+    "gamme": "PREMIUM",
+    "gamme_commerciale": "GOLD"
+  },
+  {
+    "id_carte": "BKP-VISA-BUSINESS-PLATINUM",
+    "banque": "Banque Populaire",
+    "reseau": "VISA",
+    "nom_commercial": "Carte Visa Platinum Business Banque Populaire",
+    "gamme": "ULTRA_PREMIUM",
+    "gamme_commerciale": "PLATINUM"
+  },
+  {
+    "id_carte": "BKP-VISA-CLASSIC",
+    "banque": "Banque Populaire",
+    "reseau": "VISA",
+    "nom_commercial": "Carte Visa Classic Banque Populaire",
+    "gamme": "STANDARD",
+    "gamme_commerciale": "CLASSIC"
+  },
+  {
+    "id_carte": "BKP-VISA-INFINITE",
+    "banque": "Banque Populaire",
+    "reseau": "VISA",
+    "nom_commercial": "Carte Visa Infinite Banque Populaire",
+    "gamme": "ULTRA_PREMIUM",
+    "gamme_commerciale": "INFINITE"
+  },
+  {
+    "id_carte": "BKP-VISA-PLATINUM",
+    "banque": "Banque Populaire",
+    "reseau": "VISA",
+    "nom_commercial": "Carte Visa Platinum Banque Populaire",
+    "gamme": "ULTRA_PREMIUM",
+    "gamme_commerciale": "PLATINUM"
+  },
+  {
+    "id_carte": "BKP-VISA-PREMIER",
+    "banque": "Banque Populaire",
+    "reseau": "VISA",
+    "nom_commercial": "Carte Visa Premier Banque Populaire",
+    "gamme": "PREMIUM",
+    "gamme_commerciale": "PREMIER"
+  },
+  {
+    "id_carte": "BNP-VISA-CLASSIC",
+    "banque": "BNP Paribas",
+    "reseau": "VISA",
+    "nom_commercial": "Carte Visa Classic",
+    "gamme": "STANDARD",
+    "gamme_commerciale": "CLASSIC"
+  },
+  {
+    "id_carte": "BNP-VISA-INFINITE",
+    "banque": "BNP Paribas",
+    "reseau": "VISA",
+    "nom_commercial": "Carte Visa Infinite",
+    "gamme": "ULTRA_PREMIUM",
+    "gamme_commerciale": "INFINITE"
+  },
+  {
+    "id_carte": "BNP-VISA-ORIGIN",
+    "banque": "BNP Paribas",
+    "reseau": "VISA",
+    "nom_commercial": "Carte Visa Origin",
+    "gamme": "BASIQUE",
+    "gamme_commerciale": "BASIQUE"
+  },
+  {
+    "id_carte": "BNP-VISA-PREMIER",
+    "banque": "BNP Paribas",
+    "reseau": "VISA",
+    "nom_commercial": "Carte Visa Premier",
+    "gamme": "PREMIUM",
+    "gamme_commerciale": "PREMIER"
+  },
+  {
+    "id_carte": "BPL-VISA-BUSINESS",
+    "banque": "Banque Palatine",
+    "reseau": "VISA",
+    "nom_commercial": "Carte Visa Business",
+    "gamme": "STANDARD",
+    "gamme_commerciale": "BUSINESS"
+  },
+  {
+    "id_carte": "BPL-VISA-CLASSIC",
+    "banque": "Banque Palatine",
+    "reseau": "VISA",
+    "nom_commercial": "Carte Visa Classic",
+    "gamme": "STANDARD",
+    "gamme_commerciale": "CLASSIC"
+  },
+  {
+    "id_carte": "BPL-VISA-GOLDBUSINESS",
+    "banque": "Banque Palatine",
+    "reseau": "VISA",
+    "nom_commercial": "Carte Visa Gold Business",
+    "gamme": "PREMIUM",
+    "gamme_commerciale": "GOLD"
+  },
+  {
+    "id_carte": "BPL-VISA-INFINITE",
+    "banque": "Banque Palatine",
+    "reseau": "VISA",
+    "nom_commercial": "Carte Visa Infinite",
+    "gamme": "ULTRA_PREMIUM",
+    "gamme_commerciale": "INFINITE"
+  },
+  {
+    "id_carte": "BPL-VISA-PLATINUM",
+    "banque": "Banque Palatine",
+    "reseau": "VISA",
+    "nom_commercial": "Carte Visa Platinum",
+    "gamme": "ULTRA_PREMIUM",
+    "gamme_commerciale": "PLATINUM"
+  },
+  {
+    "id_carte": "BPL-VISA-PLATINUMBUSINESS",
+    "banque": "Banque Palatine",
+    "reseau": "VISA",
+    "nom_commercial": "Carte Visa Platinum Business",
+    "gamme": "ULTRA_PREMIUM",
+    "gamme_commerciale": "PLATINUM"
+  },
+  {
+    "id_carte": "BPL-VISA-PREMIER",
+    "banque": "Banque Palatine",
+    "reseau": "VISA",
+    "nom_commercial": "Carte Visa Premier",
+    "gamme": "PREMIUM",
+    "gamme_commerciale": "PREMIER"
+  },
+  {
+    "id_carte": "BPL-VISA-REALYS",
+    "banque": "Banque Palatine",
+    "reseau": "VISA",
+    "nom_commercial": "Carte Réalys",
+    "gamme": "STANDARD",
+    "gamme_commerciale": "STANDARD"
+  },
+  {
+    "id_carte": "BRD-VISA-BRED-MOI",
+    "banque": "BRED Banque Populaire",
+    "reseau": "VISA",
+    "nom_commercial": "Carte Bredmoi (Mastercard)",
+    "gamme": "BASIQUE",
+    "gamme_commerciale": "BASIQUE"
+  },
+  {
+    "id_carte": "BRD-VISA-BUSINESS",
+    "banque": "BRED Banque Populaire",
+    "reseau": "VISA",
+    "nom_commercial": "Carte Visa Business",
+    "gamme": "STANDARD",
+    "gamme_commerciale": "BUSINESS"
+  },
+  {
+    "id_carte": "BRD-VISA-CLASSIC",
+    "banque": "BRED Banque Populaire",
+    "reseau": "VISA",
+    "nom_commercial": "Carte Visa Classic",
+    "gamme": "STANDARD",
+    "gamme_commerciale": "CLASSIC"
+  },
+  {
+    "id_carte": "BRD-VISA-CONTROLE",
+    "banque": "BRED Banque Populaire",
+    "reseau": "VISA",
+    "nom_commercial": "Carte Visa à controle de solde",
+    "gamme": "BASIQUE",
+    "gamme_commerciale": "BASIQUE"
+  },
+  {
+    "id_carte": "BRD-VISA-CREODIS",
+    "banque": "BRED Banque Populaire",
+    "reseau": "VISA",
+    "nom_commercial": "Carte Créodis",
+    "gamme": "STANDARD",
+    "gamme_commerciale": "STANDARD"
+  },
+  {
+    "id_carte": "BRD-VISA-INFINITE",
+    "banque": "BRED Banque Populaire",
+    "reseau": "VISA",
+    "nom_commercial": "Carte Visa Infinite",
+    "gamme": "ULTRA_PREMIUM",
+    "gamme_commerciale": "INFINITE"
+  },
+  {
+    "id_carte": "BRD-VISA-ONE",
+    "banque": "BRED Banque Populaire",
+    "reseau": "VISA",
+    "nom_commercial": "Carte Visa Bred One",
+    "gamme": "BASIQUE",
+    "gamme_commerciale": "BASIQUE"
+  },
+  {
+    "id_carte": "BRD-VISA-PLATINUM",
+    "banque": "BRED Banque Populaire",
+    "reseau": "VISA",
+    "nom_commercial": "Carte Visa Platinum",
+    "gamme": "ULTRA_PREMIUM",
+    "gamme_commerciale": "PLATINUM"
+  },
+  {
+    "id_carte": "BRD-VISA-PREMIER",
+    "banque": "BRED Banque Populaire",
+    "reseau": "VISA",
+    "nom_commercial": "Carte Visa Premier",
+    "gamme": "PREMIUM",
+    "gamme_commerciale": "PREMIER"
+  },
+  {
+    "id_carte": "BSB-VISA-BUSINESS",
+    "banque": "Boursorama Banque",
+    "reseau": "VISA",
+    "nom_commercial": "Carte business",
+    "gamme": "STANDARD",
+    "gamme_commerciale": "BUSINESS"
+  },
+  {
+    "id_carte": "BSB-VISA-FREEDOM",
+    "banque": "Boursorama Banque",
+    "reseau": "VISA",
+    "nom_commercial": "Carte Freedom",
+    "gamme": "BASIQUE",
+    "gamme_commerciale": "BASIQUE"
+  },
+  {
+    "id_carte": "BSB-VISA-METAL",
+    "banque": "Boursorama Banque",
+    "reseau": "VISA",
+    "nom_commercial": "Carte METAL",
+    "gamme": "ULTRA_PREMIUM",
+    "gamme_commerciale": "METAL"
+  },
+  {
+    "id_carte": "BSB-VISA-ULTIM",
+    "banque": "Boursorama Banque",
+    "reseau": "VISA",
+    "nom_commercial": "Carte ULTIM",
+    "gamme": "PREMIUM",
+    "gamme_commerciale": "ULTIM"
+  },
+  {
+    "id_carte": "BSB-VISA-WELCOME",
+    "banque": "Boursorama Banque",
+    "reseau": "VISA",
+    "nom_commercial": "Carte WELCOME",
+    "gamme": "BASIQUE",
+    "gamme_commerciale": "BASIQUE"
+  },
+  {
+    "id_carte": "BUN-MASTERCARD-BUSINESS-CORE",
+    "banque": "Bunq",
+    "reseau": "MASTERCARD",
+    "nom_commercial": "Bunq Core Business",
+    "gamme": "STANDARD",
+    "gamme_commerciale": "BUSINESS"
+  },
+  {
+    "id_carte": "BUN-MASTERCARD-BUSINESS-ELITE",
+    "banque": "Bunq",
+    "reseau": "MASTERCARD",
+    "nom_commercial": "Bunq Elite Business",
+    "gamme": "STANDARD",
+    "gamme_commerciale": "BUSINESS"
+  },
+  {
+    "id_carte": "BUN-MASTERCARD-BUSINESS-FREE",
+    "banque": "Bunq",
+    "reseau": "MASTERCARD",
+    "nom_commercial": "Bunq Free Business",
+    "gamme": "STANDARD",
+    "gamme_commerciale": "BUSINESS"
+  },
+  {
+    "id_carte": "BUN-MASTERCARD-BUSINESS-PRO",
+    "banque": "Bunq",
+    "reseau": "MASTERCARD",
+    "nom_commercial": "Bunq Pro Business",
+    "gamme": "STANDARD",
+    "gamme_commerciale": "BUSINESS"
+  },
+  {
+    "id_carte": "BUN-MASTERCARD-CORE",
+    "banque": "Bunq",
+    "reseau": "MASTERCARD",
+    "nom_commercial": "Bunq Core",
+    "gamme": "STANDARD",
+    "gamme_commerciale": "STANDARD"
+  },
+  {
+    "id_carte": "BUN-MASTERCARD-ELITE",
+    "banque": "Bunq",
+    "reseau": "MASTERCARD",
+    "nom_commercial": "Bunq Elite",
+    "gamme": "PREMIUM",
+    "gamme_commerciale": "PREMIUM"
+  },
+  {
+    "id_carte": "BUN-MASTERCARD-FREE",
+    "banque": "Bunq",
+    "reseau": "MASTERCARD",
+    "nom_commercial": "Bunq Free",
+    "gamme": "BASIQUE",
+    "gamme_commerciale": "BASIQUE"
+  },
+  {
+    "id_carte": "BUN-MASTERCARD-PRO",
+    "banque": "Bunq",
+    "reseau": "MASTERCARD",
+    "nom_commercial": "Bunq Pro",
+    "gamme": "STANDARD",
+    "gamme_commerciale": "STANDARD"
+  },
+  {
+    "id_carte": "CAR-MASTERCARD-PASS",
+    "banque": "Carrefour Banque",
+    "reseau": "MASTERCARD",
+    "nom_commercial": "Carte PASS Mastercard (standard)",
+    "gamme": "STANDARD",
+    "gamme_commerciale": "STANDARD"
+  },
+  {
+    "id_carte": "CAR-MASTERCARD-PASS-PREMIUM",
+    "banque": "Carrefour Banque",
+    "reseau": "MASTERCARD",
+    "nom_commercial": "Carte PASS Premium Mastercard",
+    "gamme": "PREMIUM",
+    "gamme_commerciale": "PREMIUM"
+  },
+  {
+    "id_carte": "CCF-VISA-AUTONOM",
+    "banque": "CCF",
+    "reseau": "VISA",
+    "nom_commercial": "Visa CCF Autonom",
+    "gamme": "STANDARD",
+    "gamme_commerciale": "STANDARD"
+  },
+  {
+    "id_carte": "CCF-VISA-CLASSIC",
+    "banque": "CCF",
+    "reseau": "VISA",
+    "nom_commercial": "Visa Classic",
+    "gamme": "STANDARD",
+    "gamme_commerciale": "CLASSIC"
+  },
+  {
+    "id_carte": "CCF-VISA-INFINITE",
+    "banque": "CCF",
+    "reseau": "VISA",
+    "nom_commercial": "Visa Infinite",
+    "gamme": "ULTRA_PREMIUM",
+    "gamme_commerciale": "INFINITE"
+  },
+  {
+    "id_carte": "CCF-VISA-ONE",
+    "banque": "CCF",
+    "reseau": "VISA",
+    "nom_commercial": "Visa CCF One",
+    "gamme": "BASIQUE",
+    "gamme_commerciale": "BASIQUE"
+  },
+  {
+    "id_carte": "CCF-VISA-PREMIER",
+    "banque": "CCF",
+    "reseau": "VISA",
+    "nom_commercial": "Visa Premier",
+    "gamme": "PREMIUM",
+    "gamme_commerciale": "PREMIER"
+  },
+  {
+    "id_carte": "CDE-VISA-CLASSIC",
+    "banque": "Caisse d'Épargne",
+    "reseau": "VISA",
+    "nom_commercial": "Visa Classic",
+    "gamme": "STANDARD",
+    "gamme_commerciale": "CLASSIC"
+  },
+  {
+    "id_carte": "CDE-VISA-INFINITE",
+    "banque": "Caisse d'Épargne",
+    "reseau": "VISA",
+    "nom_commercial": "Visa Infinite",
+    "gamme": "ULTRA_PREMIUM",
+    "gamme_commerciale": "INFINITE"
+  },
+  {
+    "id_carte": "CDE-VISA-IZICARTE-CLASSIC",
+    "banque": "Caisse d'Épargne",
+    "reseau": "VISA",
+    "nom_commercial": "Visa Classic + Izicarte",
+    "gamme": "STANDARD",
+    "gamme_commerciale": "CLASSIC"
+  },
+  {
+    "id_carte": "CDE-VISA-IZICARTE-PLATINUM",
+    "banque": "Caisse d'Épargne",
+    "reseau": "VISA",
+    "nom_commercial": "Visa Platinum + Izicarte",
+    "gamme": "ULTRA_PREMIUM",
+    "gamme_commerciale": "PLATINUM"
+  },
+  {
+    "id_carte": "CDE-VISA-IZICARTE-PREMIER",
+    "banque": "Caisse d'Épargne",
+    "reseau": "VISA",
+    "nom_commercial": "Visa Premier + Izicarte",
+    "gamme": "PREMIUM",
+    "gamme_commerciale": "PREMIER"
+  },
+  {
+    "id_carte": "CDE-VISA-PLATINUM",
+    "banque": "Caisse d'Épargne",
+    "reseau": "VISA",
+    "nom_commercial": "Visa Platinum",
+    "gamme": "ULTRA_PREMIUM",
+    "gamme_commerciale": "PLATINUM"
+  },
+  {
+    "id_carte": "CDE-VISA-PREMIER",
+    "banque": "Caisse d'Épargne",
+    "reseau": "VISA",
+    "nom_commercial": "Visa Premier",
+    "gamme": "PREMIUM",
+    "gamme_commerciale": "PREMIER"
+  },
+  {
+    "id_carte": "CIC-MASTERCARD-ACHPRO",
+    "banque": "CIC",
+    "reseau": "MASTERCARD",
+    "nom_commercial": "CB Mastercard (achats pro)",
+    "gamme": "STANDARD",
+    "gamme_commerciale": "STANDARD"
+  },
+  {
+    "id_carte": "CIC-MASTERCARD-AUTO",
+    "banque": "CIC",
+    "reseau": "MASTERCARD",
+    "nom_commercial": "CB Mastercard (auto-entrepreneur)",
+    "gamme": "STANDARD",
+    "gamme_commerciale": "STANDARD"
+  },
+  {
+    "id_carte": "CIC-MASTERCARD-BUSINESS",
+    "banque": "CIC",
+    "reseau": "MASTERCARD",
+    "nom_commercial": "CB Mastercard (business)",
+    "gamme": "STANDARD",
+    "gamme_commerciale": "BUSINESS"
+  },
+  {
+    "id_carte": "CIC-MASTERCARD-BUSINESS-EXE",
+    "banque": "CIC",
+    "reseau": "MASTERCARD",
+    "nom_commercial": "CB Mastercard (Business executive)",
+    "gamme": "STANDARD",
+    "gamme_commerciale": "BUSINESS"
+  },
+  {
+    "id_carte": "CIC-MASTERCARD-CCV",
+    "banque": "CIC",
+    "reseau": "MASTERCARD",
+    "nom_commercial": "CB Mastercard (CCV Evolutif)",
+    "gamme": "STANDARD",
+    "gamme_commerciale": "STANDARD"
+  },
+  {
+    "id_carte": "CIC-MASTERCARD-GOLD",
+    "banque": "CIC",
+    "reseau": "MASTERCARD",
+    "nom_commercial": "CB Mastercard (gold)",
+    "gamme": "PREMIUM",
+    "gamme_commerciale": "GOLD"
+  },
+  {
+    "id_carte": "CIC-MASTERCARD-MOA",
+    "banque": "CIC",
+    "reseau": "MASTERCARD",
+    "nom_commercial": "MOA CB Mastercard",
+    "gamme": "BASIQUE",
+    "gamme_commerciale": "BASIQUE"
+  },
+  {
+    "id_carte": "CIC-MASTERCARD-MOA-PARCOURS",
+    "banque": "CIC",
+    "reseau": "MASTERCARD",
+    "nom_commercial": "MOA CB Mastercard parcours",
+    "gamme": "BASIQUE",
+    "gamme_commerciale": "BASIQUE"
+  },
+  {
+    "id_carte": "CIC-MASTERCARD-PARCOURS",
+    "banque": "CIC",
+    "reseau": "MASTERCARD",
+    "nom_commercial": "CB Mastercard (parcours)",
+    "gamme": "BASIQUE",
+    "gamme_commerciale": "BASIQUE"
+  },
+  {
+    "id_carte": "CIC-MASTERCARD-STANDARD",
+    "banque": "CIC",
+    "reseau": "MASTERCARD",
+    "nom_commercial": "CB Mastercard (standard)",
+    "gamme": "STANDARD",
+    "gamme_commerciale": "STANDARD"
+  },
+  {
+    "id_carte": "CIC-MASTERCARD-WORLDELITE",
+    "banque": "CIC",
+    "reseau": "MASTERCARD",
+    "nom_commercial": "CB Mastercard (world elite)",
+    "gamme": "ULTRA_PREMIUM",
+    "gamme_commerciale": "WORLD"
+  },
+  {
+    "id_carte": "CIC-VISA-BUSINESS",
+    "banque": "CIC",
+    "reseau": "VISA",
+    "nom_commercial": "CB Visa Business",
+    "gamme": "STANDARD",
+    "gamme_commerciale": "BUSINESS"
+  },
+  {
+    "id_carte": "CIC-VISA-BUSINESS-GOLD",
+    "banque": "CIC",
+    "reseau": "VISA",
+    "nom_commercial": "CB Visa Business Gold",
+    "gamme": "PREMIUM",
+    "gamme_commerciale": "GOLD"
+  },
+  {
+    "id_carte": "CIC-VISA-CLASSIC",
+    "banque": "CIC",
+    "reseau": "VISA",
+    "nom_commercial": "CB Visa Classic",
+    "gamme": "STANDARD",
+    "gamme_commerciale": "CLASSIC"
+  },
+  {
+    "id_carte": "CIC-VISA-CLASSIC-CVV",
+    "banque": "CIC",
+    "reseau": "VISA",
+    "nom_commercial": "CB Visa Classic CCV Evolutif",
+    "gamme": "STANDARD",
+    "gamme_commerciale": "CLASSIC"
+  },
+  {
+    "id_carte": "CIC-VISA-INFINITE",
+    "banque": "CIC",
+    "reseau": "VISA",
+    "nom_commercial": "CB Visa Infinite",
+    "gamme": "ULTRA_PREMIUM",
+    "gamme_commerciale": "INFINITE"
+  },
+  {
+    "id_carte": "CIC-VISA-PREMIER",
+    "banque": "CIC",
+    "reseau": "VISA",
+    "nom_commercial": "CB Visa Premier",
+    "gamme": "PREMIUM",
+    "gamme_commerciale": "PREMIER"
+  },
+  {
+    "id_carte": "CRA-MASTERCARD-BUSINESS",
+    "banque": "Crédit Agricole",
+    "reseau": "MASTERCARD",
+    "nom_commercial": "Carte Mastercard Business",
+    "gamme": "STANDARD",
+    "gamme_commerciale": "BUSINESS"
+  },
+  {
+    "id_carte": "CRA-MASTERCARD-BUSINESS-EXE",
+    "banque": "Crédit Agricole",
+    "reseau": "MASTERCARD",
+    "nom_commercial": "Carte Mastercard Business executive ou Business World",
+    "gamme": "STANDARD",
+    "gamme_commerciale": "BUSINESS"
+  },
+  {
+    "id_carte": "CRA-MASTERCARD-GOLD",
+    "banque": "Crédit Agricole",
+    "reseau": "MASTERCARD",
+    "nom_commercial": "Carte Mastercard Gold",
+    "gamme": "PREMIUM",
+    "gamme_commerciale": "GOLD"
+  },
+  {
+    "id_carte": "CRA-MASTERCARD-PRO",
+    "banque": "Crédit Agricole",
+    "reseau": "MASTERCARD",
+    "nom_commercial": "Carte Mastercard Professionnel",
+    "gamme": "STANDARD",
+    "gamme_commerciale": "STANDARD"
+  },
+  {
+    "id_carte": "CRA-MASTERCARD-STANDARD",
+    "banque": "Crédit Agricole",
+    "reseau": "MASTERCARD",
+    "nom_commercial": "Carte Mastercard Standard (Standard / Débit immédiat ou différé)",
+    "gamme": "STANDARD",
+    "gamme_commerciale": "STANDARD"
+  },
+  {
+    "id_carte": "CRA-MASTERCARD-WORLDELITE",
+    "banque": "Crédit Agricole",
+    "reseau": "MASTERCARD",
+    "nom_commercial": "Mastercard World Elite",
+    "gamme": "ULTRA_PREMIUM",
+    "gamme_commerciale": "WORLD"
+  },
+  {
+    "id_carte": "CRA-VISA-CLASSIC",
+    "banque": "Crédit Agricole",
+    "reseau": "VISA",
+    "nom_commercial": "Carte Visa Classic",
+    "gamme": "STANDARD",
+    "gamme_commerciale": "CLASSIC"
+  },
+  {
+    "id_carte": "CRA-VISA-INFINITE",
+    "banque": "Crédit Agricole",
+    "reseau": "VISA",
+    "nom_commercial": "Carte Visa Infinite",
+    "gamme": "ULTRA_PREMIUM",
+    "gamme_commerciale": "INFINITE"
+  },
+  {
+    "id_carte": "CRA-VISA-PREMIER",
+    "banque": "Crédit Agricole",
+    "reseau": "VISA",
+    "nom_commercial": "Carte Visa Premier",
+    "gamme": "PREMIUM",
+    "gamme_commerciale": "PREMIER"
+  },
+  {
+    "id_carte": "CRC-VISA-BUSINESS",
+    "banque": "Crédit Coopératif",
+    "reseau": "VISA",
+    "nom_commercial": "Visa Business",
+    "gamme": "STANDARD",
+    "gamme_commerciale": "BUSINESS"
+  },
+  {
+    "id_carte": "CRC-VISA-BUSINESS-GOLD",
+    "banque": "Crédit Coopératif",
+    "reseau": "VISA",
+    "nom_commercial": "Visa Business Gold",
+    "gamme": "PREMIUM",
+    "gamme_commerciale": "GOLD"
+  },
+  {
+    "id_carte": "CRC-VISA-BUSINESS-PLATINUM",
+    "banque": "Crédit Coopératif",
+    "reseau": "VISA",
+    "nom_commercial": "Visa Business Platinum",
+    "gamme": "ULTRA_PREMIUM",
+    "gamme_commerciale": "PLATINUM"
+  },
+  {
+    "id_carte": "CRC-VISA-BUSINESS-START",
+    "banque": "Crédit Coopératif",
+    "reseau": "VISA",
+    "nom_commercial": "Visa Business Start",
+    "gamme": "STANDARD",
+    "gamme_commerciale": "BUSINESS"
+  },
+  {
+    "id_carte": "CRC-VISA-CLASSIC",
+    "banque": "Crédit Coopératif",
+    "reseau": "VISA",
+    "nom_commercial": "Visa Classic Agir",
+    "gamme": "STANDARD",
+    "gamme_commerciale": "CLASSIC"
+  },
+  {
+    "id_carte": "CRC-VISA-INFINITE",
+    "banque": "Crédit Coopératif",
+    "reseau": "VISA",
+    "nom_commercial": "Visa Infinite Agir",
+    "gamme": "ULTRA_PREMIUM",
+    "gamme_commerciale": "INFINITE"
+  },
+  {
+    "id_carte": "CRC-VISA-PLATINUM",
+    "banque": "Crédit Coopératif",
+    "reseau": "VISA",
+    "nom_commercial": "Visa Platinum Agir",
+    "gamme": "ULTRA_PREMIUM",
+    "gamme_commerciale": "PLATINUM"
+  },
+  {
+    "id_carte": "CRC-VISA-PREMIER",
+    "banque": "Crédit Coopératif",
+    "reseau": "VISA",
+    "nom_commercial": "Visa Premier Agir",
+    "gamme": "PREMIUM",
+    "gamme_commerciale": "PREMIER"
+  },
+  {
+    "id_carte": "CRM-MASTERCARD-ACCESS",
+    "banque": "Crédit Mutuel",
+    "reseau": "MASTERCARD",
+    "nom_commercial": "CB Mastercard (Access)",
+    "gamme": "BASIQUE",
+    "gamme_commerciale": "BASIQUE"
+  },
+  {
+    "id_carte": "CRM-MASTERCARD-AKPLA",
+    "banque": "Crédit Mutuel",
+    "reseau": "MASTERCARD",
+    "nom_commercial": "CB Mastercard (aKP La)",
+    "gamme": "STANDARD",
+    "gamme_commerciale": "STANDARD"
+  },
+  {
+    "id_carte": "CRM-MASTERCARD-CERTIZEN",
+    "banque": "Crédit Mutuel",
+    "reseau": "MASTERCARD",
+    "nom_commercial": "CB Mastercard (certizen)",
+    "gamme": "STANDARD",
+    "gamme_commerciale": "STANDARD"
+  },
+  {
+    "id_carte": "CRM-MASTERCARD-GOLD",
+    "banque": "Crédit Mutuel",
+    "reseau": "MASTERCARD",
+    "nom_commercial": "CB Mastercard (Gold)",
+    "gamme": "PREMIUM",
+    "gamme_commerciale": "GOLD"
+  },
+  {
+    "id_carte": "CRM-MASTERCARD-JEUNE",
+    "banque": "Crédit Mutuel",
+    "reseau": "MASTERCARD",
+    "nom_commercial": "CB Mastercard (jeune)",
+    "gamme": "BASIQUE",
+    "gamme_commerciale": "BASIQUE"
+  },
+  {
+    "id_carte": "CRM-MASTERCARD-ONLINE",
+    "banque": "Crédit Mutuel",
+    "reseau": "MASTERCARD",
+    "nom_commercial": "CB Mastercard (online)",
+    "gamme": "STANDARD",
+    "gamme_commerciale": "STANDARD"
+  },
+  {
+    "id_carte": "CRM-MASTERCARD-STANDARD",
+    "banque": "Crédit Mutuel",
+    "reseau": "MASTERCARD",
+    "nom_commercial": "CB Mastercard",
+    "gamme": "STANDARD",
+    "gamme_commerciale": "STANDARD"
+  },
+  {
+    "id_carte": "CRM-MASTERCARD-WORLDELITE",
+    "banque": "Crédit Mutuel",
+    "reseau": "MASTERCARD",
+    "nom_commercial": "CB Mastercard (World Elite)",
+    "gamme": "ULTRA_PREMIUM",
+    "gamme_commerciale": "WORLD"
+  },
+  {
+    "id_carte": "CRM-VISA-BUSINESS",
+    "banque": "Crédit Mutuel",
+    "reseau": "VISA",
+    "nom_commercial": "CB Visa Business",
+    "gamme": "STANDARD",
+    "gamme_commerciale": "BUSINESS"
+  },
+  {
+    "id_carte": "CRM-VISA-BUSINESS-GOLD",
+    "banque": "Crédit Mutuel",
+    "reseau": "VISA",
+    "nom_commercial": "CB Visa Business Gold",
+    "gamme": "PREMIUM",
+    "gamme_commerciale": "GOLD"
+  },
+  {
+    "id_carte": "CRM-VISA-CLASSIC",
+    "banque": "Crédit Mutuel",
+    "reseau": "VISA",
+    "nom_commercial": "CB Visa Classic",
+    "gamme": "STANDARD",
+    "gamme_commerciale": "CLASSIC"
+  },
+  {
+    "id_carte": "CRM-VISA-INFINITE",
+    "banque": "Crédit Mutuel",
+    "reseau": "VISA",
+    "nom_commercial": "CB Visa Infinite",
+    "gamme": "ULTRA_PREMIUM",
+    "gamme_commerciale": "INFINITE"
+  },
+  {
+    "id_carte": "CRM-VISA-PREMIER",
+    "banque": "Crédit Mutuel",
+    "reseau": "VISA",
+    "nom_commercial": "CB Visa Premier",
+    "gamme": "PREMIUM",
+    "gamme_commerciale": "PREMIER"
+  },
+  {
+    "id_carte": "FLA-MASTERCARD-CASINO",
+    "banque": "Floa Bank",
+    "reseau": "MASTERCARD",
+    "nom_commercial": "Carte Casino (FLOA)",
+    "gamme": "STANDARD",
+    "gamme_commerciale": "STANDARD"
+  },
+  {
+    "id_carte": "FLA-MASTERCARD-CDISCOUNT",
+    "banque": "Floa Bank",
+    "reseau": "MASTERCARD",
+    "nom_commercial": "Carte Cdiscount (FLOA)",
+    "gamme": "STANDARD",
+    "gamme_commerciale": "STANDARD"
+  },
+  {
+    "id_carte": "FLA-MASTERCARD-GOLD",
+    "banque": "Floa Bank",
+    "reseau": "MASTERCARD",
+    "nom_commercial": "Carte Gold FLOA",
+    "gamme": "PREMIUM",
+    "gamme_commerciale": "GOLD"
+  },
+  {
+    "id_carte": "FOR-MASTERCARD-FOSFO",
+    "banque": "Fortuneo",
+    "reseau": "MASTERCARD",
+    "nom_commercial": "Fosfo Mastercard",
+    "gamme": "BASIQUE",
+    "gamme_commerciale": "BASIQUE"
+  },
+  {
+    "id_carte": "FOR-MASTERCARD-GOLD",
+    "banque": "Fortuneo",
+    "reseau": "MASTERCARD",
+    "nom_commercial": "Gold CB Mastercard Fortuneo",
+    "gamme": "PREMIUM",
+    "gamme_commerciale": "GOLD"
+  },
+  {
+    "id_carte": "FOR-MASTERCARD-WORLD-ELITE",
+    "banque": "Fortuneo",
+    "reseau": "MASTERCARD",
+    "nom_commercial": "World Elite CB Mastercard Fortuneo",
+    "gamme": "ULTRA_PREMIUM",
+    "gamme_commerciale": "WORLD"
+  },
+  {
+    "id_carte": "GRG-MASTERCARD-ESSENTIEL",
+    "banque": "Green Got",
+    "reseau": "MASTERCARD",
+    "nom_commercial": "Carte Green-Got (Offre Essentiel)",
+    "gamme": "STANDARD",
+    "gamme_commerciale": "STANDARD"
+  },
+  {
+    "id_carte": "GRG-MASTERCARD-PREMIUM",
+    "banque": "Green Got",
+    "reseau": "MASTERCARD",
+    "nom_commercial": "Carte Green-Got (Offre Premium)",
+    "gamme": "STANDARD",
+    "gamme_commerciale": "STANDARD"
+  },
+  {
+    "id_carte": "HEL-VISA-CLASSIC",
+    "banque": "Helios",
+    "reseau": "VISA",
+    "nom_commercial": "Carte Visa (Helios)",
+    "gamme": "STANDARD",
+    "gamme_commerciale": "CLASSIC"
+  },
+  {
+    "id_carte": "HLB-VISA-HELLOONE",
+    "banque": "Hello Bank",
+    "reseau": "VISA",
+    "nom_commercial": "Visa Hello One",
+    "gamme": "BASIQUE",
+    "gamme_commerciale": "BASIQUE"
+  },
+  {
+    "id_carte": "HLB-VISA-HELLOORIGIN",
+    "banque": "Hello Bank",
+    "reseau": "VISA",
+    "nom_commercial": "Visa Hello Origin (carte ado)",
+    "gamme": "BASIQUE",
+    "gamme_commerciale": "BASIQUE"
+  },
+  {
+    "id_carte": "HLB-VISA-HELLOPRIME",
+    "banque": "Hello Bank",
+    "reseau": "VISA",
+    "nom_commercial": "Visa Hello Prime",
+    "gamme": "PREMIUM",
+    "gamme_commerciale": "PREMIUM"
+  },
+  {
+    "id_carte": "HSB-VISA-BUSINESS",
+    "banque": "HSBC",
+    "reseau": "VISA",
+    "nom_commercial": "Carte Visa Business",
+    "gamme": "STANDARD",
+    "gamme_commerciale": "BUSINESS"
+  },
+  {
+    "id_carte": "HSB-VISA-GOLDBUSINESS",
+    "banque": "HSBC",
+    "reseau": "VISA",
+    "nom_commercial": "Carte Visa Gold Business",
+    "gamme": "PREMIUM",
+    "gamme_commerciale": "GOLD"
+  },
+  {
+    "id_carte": "LBP-MASTERCARD-GOLD",
+    "banque": "La Banque Postale",
+    "reseau": "MASTERCARD",
+    "nom_commercial": "Carte Gold MasterCard (haut de gamme)",
+    "gamme": "PREMIUM",
+    "gamme_commerciale": "GOLD"
+  },
+  {
+    "id_carte": "LBP-MASTERCARD-WORLD-ELITE",
+    "banque": "La Banque Postale",
+    "reseau": "MASTERCARD",
+    "nom_commercial": "Carte World Elite MasterCard (carte de prestige)",
+    "gamme": "ULTRA_PREMIUM",
+    "gamme_commerciale": "WORLD"
+  },
+  {
+    "id_carte": "LBP-VISA-INFINITE",
+    "banque": "La Banque Postale",
+    "reseau": "VISA",
+    "nom_commercial": "Carte Visa Infinite / carte de prestige",
+    "gamme": "ULTRA_PREMIUM",
+    "gamme_commerciale": "INFINITE"
+  },
+  {
+    "id_carte": "LBP-VISA-PREMIER",
+    "banque": "La Banque Postale",
+    "reseau": "VISA",
+    "nom_commercial": "Carte Visa Premier (haut de gamme)",
+    "gamme": "PREMIUM",
+    "gamme_commerciale": "PREMIER"
+  },
+  {
+    "id_carte": "LCL-MASTERCARD-INVENTIVE",
+    "banque": "LCL",
+    "reseau": "MASTERCARD",
+    "nom_commercial": "Inventive Mastercard",
+    "gamme": "STANDARD",
+    "gamme_commerciale": "STANDARD"
+  },
+  {
+    "id_carte": "LCL-MASTERCARD-PLATINUMPLUS",
+    "banque": "LCL",
+    "reseau": "MASTERCARD",
+    "nom_commercial": "Mastercard Platinum+",
+    "gamme": "ULTRA_PREMIUM",
+    "gamme_commerciale": "PLATINUM"
+  },
+  {
+    "id_carte": "LCL-MASTERCARD-STANDARD",
+    "banque": "LCL",
+    "reseau": "MASTERCARD",
+    "nom_commercial": "Mastercard",
+    "gamme": "STANDARD",
+    "gamme_commerciale": "STANDARD"
+  },
+  {
+    "id_carte": "LCL-MASTERCARD-UTILICARTE",
+    "banque": "LCL",
+    "reseau": "MASTERCARD",
+    "nom_commercial": "Utilicarte Mastercard",
+    "gamme": "BASIQUE",
+    "gamme_commerciale": "BASIQUE"
+  },
+  {
+    "id_carte": "LCL-VISA-CLEO",
+    "banque": "LCL",
+    "reseau": "VISA",
+    "nom_commercial": "Visa Cléo",
+    "gamme": "STANDARD",
+    "gamme_commerciale": "STANDARD"
+  },
+  {
+    "id_carte": "LCL-VISA-CREDIT",
+    "banque": "LCL",
+    "reseau": "VISA",
+    "nom_commercial": "Carte Visa Crédit Renouvelable",
+    "gamme": "STANDARD",
+    "gamme_commerciale": "STANDARD"
+  },
+  {
+    "id_carte": "LCL-VISA-INFINITE",
+    "banque": "LCL",
+    "reseau": "VISA",
+    "nom_commercial": "Visa Infinite",
+    "gamme": "ULTRA_PREMIUM",
+    "gamme_commerciale": "INFINITE"
+  },
+  {
+    "id_carte": "LCL-VISA-PREMIER",
+    "banque": "LCL",
+    "reseau": "VISA",
+    "nom_commercial": "Visa Premier",
+    "gamme": "PREMIUM",
+    "gamme_commerciale": "PREMIER"
+  },
+  {
+    "id_carte": "LCL-ZEN",
+    "banque": "LCL",
+    "reseau": "AUTRE",
+    "nom_commercial": "Carte Zen",
+    "gamme": "BASIQUE",
+    "gamme_commerciale": "BASIQUE"
+  },
+  {
+    "id_carte": "MFB-VISA-STANDARD",
+    "banque": "Ma French Bank",
+    "reseau": "VISA",
+    "nom_commercial": "Carte Visa Ma French Bank (Originale / Idéale / carte standard)",
+    "gamme": "STANDARD",
+    "gamme_commerciale": "STANDARD"
+  },
+  {
+    "id_carte": "MIL-VISA-CLASSIC",
+    "banque": "Milleis Banque",
+    "reseau": "VISA",
+    "nom_commercial": "Visa Classic",
+    "gamme": "STANDARD",
+    "gamme_commerciale": "CLASSIC"
+  },
+  {
+    "id_carte": "MIL-VISA-INFINITE",
+    "banque": "Milleis Banque",
+    "reseau": "VISA",
+    "nom_commercial": "Visa Infinite",
+    "gamme": "ULTRA_PREMIUM",
+    "gamme_commerciale": "INFINITE"
+  },
+  {
+    "id_carte": "MIL-VISA-ONLINE",
+    "banque": "Milleis Banque",
+    "reseau": "VISA",
+    "nom_commercial": "Visa On Line (carte en ligne)",
+    "gamme": "STANDARD",
+    "gamme_commerciale": "STANDARD"
+  },
+  {
+    "id_carte": "MIL-VISA-PLATINUM",
+    "banque": "Milleis Banque",
+    "reseau": "VISA",
+    "nom_commercial": "Visa Platinum",
+    "gamme": "ULTRA_PREMIUM",
+    "gamme_commerciale": "PLATINUM"
+  },
+  {
+    "id_carte": "MIL-VISA-PREMIER",
+    "banque": "Milleis Banque",
+    "reseau": "VISA",
+    "nom_commercial": "Visa Premier",
+    "gamme": "PREMIUM",
+    "gamme_commerciale": "PREMIER"
+  },
+  {
+    "id_carte": "MON-VISA-AUTORISATION",
+    "banque": "Monabanq",
+    "reseau": "VISA",
+    "nom_commercial": "Visa à autorisation systématique Monabanq",
+    "gamme": "BASIQUE",
+    "gamme_commerciale": "BASIQUE"
+  },
+  {
+    "id_carte": "MON-VISA-CLASSIC",
+    "banque": "Monabanq",
+    "reseau": "VISA",
+    "nom_commercial": "Visa Classic Monabanq",
+    "gamme": "STANDARD",
+    "gamme_commerciale": "CLASSIC"
+  },
+  {
+    "id_carte": "MON-VISA-PLATINUM",
+    "banque": "Monabanq",
+    "reseau": "VISA",
+    "nom_commercial": "Visa Platinum Monabanq",
+    "gamme": "ULTRA_PREMIUM",
+    "gamme_commerciale": "PLATINUM"
+  },
+  {
+    "id_carte": "MON-VISA-PREMIER",
+    "banque": "Monabanq",
+    "reseau": "VISA",
+    "nom_commercial": "Visa Premier Monabanq",
+    "gamme": "PREMIUM",
+    "gamme_commerciale": "PREMIER"
+  },
+  {
+    "id_carte": "N26-MASTERCARD-GO",
+    "banque": "N26",
+    "reseau": "MASTERCARD",
+    "nom_commercial": "N26 Go (Mastercard)",
+    "gamme": "BASIQUE",
+    "gamme_commerciale": "BASIQUE"
+  },
+  {
+    "id_carte": "N26-MASTERCARD-METAL",
+    "banque": "N26",
+    "reseau": "MASTERCARD",
+    "nom_commercial": "N26 Metal (Mastercard, “carte metal”)",
+    "gamme": "ULTRA_PREMIUM",
+    "gamme_commerciale": "METAL"
+  },
+  {
+    "id_carte": "N26-MASTERCARD-SMART",
+    "banque": "N26",
+    "reseau": "MASTERCARD",
+    "nom_commercial": "N26 Smart (Mastercard)",
+    "gamme": "STANDARD",
+    "gamme_commerciale": "STANDARD"
+  },
+  {
+    "id_carte": "N26-MASTERCARD-STANDARD",
+    "banque": "N26",
+    "reseau": "MASTERCARD",
+    "nom_commercial": "N26 Standard (Mastercard)",
+    "gamme": "STANDARD",
+    "gamme_commerciale": "STANDARD"
+  },
+  {
+    "id_carte": "NIC-MASTERCARD-CHROME",
+    "banque": "Nickel",
+    "reseau": "MASTERCARD",
+    "nom_commercial": "Nickel Chrome",
+    "gamme": "STANDARD",
+    "gamme_commerciale": "STANDARD"
+  },
+  {
+    "id_carte": "NIC-MASTERCARD-CLASSIC",
+    "banque": "Nickel",
+    "reseau": "MASTERCARD",
+    "nom_commercial": "Nickel Standard",
+    "gamme": "STANDARD",
+    "gamme_commerciale": "CLASSIC"
+  },
+  {
+    "id_carte": "NIC-MASTERCARD-METAL",
+    "banque": "Nickel",
+    "reseau": "MASTERCARD",
+    "nom_commercial": "Nickel Metal",
+    "gamme": "ULTRA_PREMIUM",
+    "gamme_commerciale": "METAL"
+  },
+  {
+    "id_carte": "NIC-MASTERCARD-MYNICKEL",
+    "banque": "Nickel",
+    "reseau": "MASTERCARD",
+    "nom_commercial": "My Standard",
+    "gamme": "STANDARD",
+    "gamme_commerciale": "STANDARD"
+  },
+  {
+    "id_carte": "QON-MASTERCARD-ONE",
+    "banque": "Qonto",
+    "reseau": "MASTERCARD",
+    "nom_commercial": "Mastercard Business One",
+    "gamme": "STANDARD",
+    "gamme_commerciale": "BUSINESS"
+  },
+  {
+    "id_carte": "QON-MASTERCARD-PLUS",
+    "banque": "Qonto",
+    "reseau": "MASTERCARD",
+    "nom_commercial": "Mastercard Business Plus",
+    "gamme": "STANDARD",
+    "gamme_commerciale": "BUSINESS"
+  },
+  {
+    "id_carte": "QON-MASTERCARD-X",
+    "banque": "Qonto",
+    "reseau": "MASTERCARD",
+    "nom_commercial": "Mastercard Business X (carte premium)",
+    "gamme": "STANDARD",
+    "gamme_commerciale": "BUSINESS"
+  },
+  {
+    "id_carte": "REV-VISA-DEBIT-METAL",
+    "banque": "Revolut",
+    "reseau": "VISA",
+    "nom_commercial": "Revolut Metal (Visa/Débit)",
+    "gamme": "ULTRA_PREMIUM",
+    "gamme_commerciale": "METAL"
+  },
+  {
+    "id_carte": "REV-VISA-DEBIT-PLUS",
+    "banque": "Revolut",
+    "reseau": "VISA",
+    "nom_commercial": "Revolut Plus (Visa/Débit)",
+    "gamme": "STANDARD",
+    "gamme_commerciale": "STANDARD"
+  },
+  {
+    "id_carte": "REV-VISA-DEBIT-PREMIUM",
+    "banque": "Revolut",
+    "reseau": "VISA",
+    "nom_commercial": "Revolut Premium (Visa/Débit)",
+    "gamme": "PREMIUM",
+    "gamme_commerciale": "PREMIUM"
+  },
+  {
+    "id_carte": "REV-VISA-DEBIT-STANDARD",
+    "banque": "Revolut",
+    "reseau": "VISA",
+    "nom_commercial": "Revolut Standard (Visa/Débit)",
+    "gamme": "STANDARD",
+    "gamme_commerciale": "STANDARD"
+  },
+  {
+    "id_carte": "REV-VISA-DEBIT-ULTRA",
+    "banque": "Revolut",
+    "reseau": "VISA",
+    "nom_commercial": "Revolut Ultra (Visa/Débit)",
+    "gamme": "ULTRA_PREMIUM",
+    "gamme_commerciale": "ULTRA_PREMIUM"
+  },
+  {
+    "id_carte": "ROT-MASTERCARD-PAIEMENT",
+    "banque": "Edmond de Rothschild",
+    "reseau": "MASTERCARD",
+    "nom_commercial": "Carte de paiement Mastercard (Edmond de Rothschild)",
+    "gamme": "PREMIUM",
+    "gamme_commerciale": "PREMIUM"
+  },
+  {
+    "id_carte": "ROT-VISA-PAIEMENT",
+    "banque": "Edmond de Rothschild",
+    "reseau": "VISA",
+    "nom_commercial": "Carte de paiement Visa (Edmond de Rothschild)",
+    "gamme": "PREMIUM",
+    "gamme_commerciale": "PREMIUM"
+  },
+  {
+    "id_carte": "SGE-VISA-BUSINESS",
+    "banque": "Société Générale",
+    "reseau": "VISA",
+    "nom_commercial": "CB Visa Business",
+    "gamme": "STANDARD",
+    "gamme_commerciale": "BUSINESS"
+  },
+  {
+    "id_carte": "SGE-VISA-BUSINESS-GOLD",
+    "banque": "Société Générale",
+    "reseau": "VISA",
+    "nom_commercial": "CB Visa Business Gold",
+    "gamme": "PREMIUM",
+    "gamme_commerciale": "GOLD"
+  },
+  {
+    "id_carte": "SGE-VISA-CIRRUS",
+    "banque": "Société Générale",
+    "reseau": "VISA",
+    "nom_commercial": "CB Service Eclair Cirrus",
+    "gamme": "BASIQUE",
+    "gamme_commerciale": "BASIQUE"
+  },
+  {
+    "id_carte": "SGE-VISA-CLASSIC",
+    "banque": "Société Générale",
+    "reseau": "VISA",
+    "nom_commercial": "CB Visa",
+    "gamme": "STANDARD",
+    "gamme_commerciale": "CLASSIC"
+  },
+  {
+    "id_carte": "SGE-VISA-EVOLUTION",
+    "banque": "Société Générale",
+    "reseau": "VISA",
+    "nom_commercial": "CB Visa Evolution",
+    "gamme": "STANDARD",
+    "gamme_commerciale": "STANDARD"
+  },
+  {
+    "id_carte": "SGE-VISA-INFINITE",
+    "banque": "Société Générale",
+    "reseau": "VISA",
+    "nom_commercial": "CB Visa Infinite",
+    "gamme": "ULTRA_PREMIUM",
+    "gamme_commerciale": "INFINITE"
+  },
+  {
+    "id_carte": "SGE-VISA-PREMIER",
+    "banque": "Société Générale",
+    "reseau": "VISA",
+    "nom_commercial": "CB Visa Premier",
+    "gamme": "PREMIUM",
+    "gamme_commerciale": "PREMIER"
+  },
+  {
+    "id_carte": "SUM-VISA-BASIQUE",
+    "banque": "Sumeria",
+    "reseau": "VISA",
+    "nom_commercial": "Sumeria Basique (Visa Debit)",
+    "gamme": "BASIQUE",
+    "gamme_commerciale": "BASIQUE"
+  },
+  {
+    "id_carte": "SUM-VISA-NOIRE",
+    "banque": "Sumeria",
+    "reseau": "VISA",
+    "nom_commercial": "Sumeria Noire (Visa Debit)",
+    "gamme": "ULTRA_PREMIUM",
+    "gamme_commerciale": "NOIRE"
+  },
+  {
+    "id_carte": "SUM-VISA-STANDARD",
+    "banque": "Sumeria",
+    "reseau": "VISA",
+    "nom_commercial": "Sumeria Standard (Visa Debit)",
+    "gamme": "STANDARD",
+    "gamme_commerciale": "STANDARD"
+  },
+  {
+    "id_carte": "CMA-ARKEA-MASTERCARD-ACCESS",
+    "banque": "Crédit Mutuel Arkéa",
+    "reseau": "MASTERCARD",
+    "nom_commercial": "Mastercard Standard",
+    "gamme": "STANDARD",
+    "gamme_commerciale": "STANDARD"
+  },
+  {
+    "id_carte": "CMA-ARKEA-MASTERCARD-STANDARD",
+    "banque": "Crédit Mutuel Arkéa",
+    "reseau": "MASTERCARD",
+    "nom_commercial": "Mastercard Standard",
+    "gamme": "STANDARD",
+    "gamme_commerciale": "STANDARD"
+  },
+  {
+    "id_carte": "CMA-ARKEA-MASTERCARD-GOLD",
+    "banque": "Crédit Mutuel Arkéa",
+    "reseau": "MASTERCARD",
+    "nom_commercial": "Gold Mastercard",
+    "gamme": "PREMIUM",
+    "gamme_commerciale": "GOLD"
+  },
+  {
+    "id_carte": "CMA-ARKEA-MASTERCARD-WORLDELITE",
+    "banque": "Crédit Mutuel Arkéa",
+    "reseau": "MASTERCARD",
+    "nom_commercial": "World Elite Mastercard",
+    "gamme": "ULTRA_PREMIUM",
+    "gamme_commerciale": "WORLD"
+  },
+  {
+    "id_carte": "CMA-ARKEA-VISA-CLASSIC",
+    "banque": "Crédit Mutuel Arkéa",
+    "reseau": "VISA",
+    "nom_commercial": "Visa Classic",
+    "gamme": "STANDARD",
+    "gamme_commerciale": "CLASSIC"
+  },
+  {
+    "id_carte": "CMA-ARKEA-VISA-PREMIER",
+    "banque": "Crédit Mutuel Arkéa",
+    "reseau": "VISA",
+    "nom_commercial": "Visa Premier",
+    "gamme": "PREMIUM",
+    "gamme_commerciale": "PREMIER"
+  },
+  {
+    "id_carte": "CMA-ARKEA-VISA-INFINITE",
+    "banque": "Crédit Mutuel Arkéa",
+    "reseau": "VISA",
+    "nom_commercial": "Visa Infinite",
+    "gamme": "ULTRA_PREMIUM",
+    "gamme_commerciale": "INFINITE"
+  },
+  {
+    "id_carte": "ONE-CARTE-AUCHAN",
+    "banque": "Oney Banque",
+    "reseau": "AUTRE",
+    "nom_commercial": "Carte Oney Auchan",
+    "gamme": "STANDARD",
+    "gamme_commerciale": "STANDARD"
+  },
+  {
+    "id_carte": "ONE-CARTE-BOULANGER",
+    "banque": "Oney Banque",
+    "reseau": "AUTRE",
+    "nom_commercial": "Carte Oney Boulanger",
+    "gamme": "STANDARD",
+    "gamme_commerciale": "STANDARD"
+  },
+  {
+    "id_carte": "ONE-CARTE-NORAUTO",
+    "banque": "Oney Banque",
+    "reseau": "AUTRE",
+    "nom_commercial": "Carte Oney Norauto",
+    "gamme": "STANDARD",
+    "gamme_commerciale": "STANDARD"
+  },
+  {
+    "id_carte": "ONE-CARTE-LEROY",
+    "banque": "Oney Banque",
+    "reseau": "AUTRE",
+    "nom_commercial": "Carte Oney Leroy merlin",
+    "gamme": "STANDARD",
+    "gamme_commerciale": "STANDARD"
+  },
+  {
+    "id_carte": "ONE-VISA-PREMIER",
+    "banque": "Oney Banque",
+    "reseau": "VISA",
+    "nom_commercial": "Carte Oney Visa Premier",
+    "gamme": "PREMIUM",
+    "gamme_commerciale": "PREMIER"
+  },
+  {
+    "id_carte": "ONE-VISA-STANDARD",
+    "banque": "Oney Banque",
+    "reseau": "VISA",
+    "nom_commercial": "Carte Oney Visa Standard",
+    "gamme": "STANDARD",
+    "gamme_commerciale": "STANDARD"
+  }
+]

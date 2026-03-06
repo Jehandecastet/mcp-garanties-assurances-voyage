@@ -5,6 +5,7 @@ Normalise la base de données :
   3. Garantie rachat_franchise_location → est_binaire=TRUE
   4. Garanties orphelines → mapping vers REF_GARANTIES
   5. est_incluse NaN → True (présence = inclusion)
+  6. Rapatriement → frais réels (règle métier IMA)
 
 Usage :
     python -m extraction.normalize
@@ -282,6 +283,39 @@ def fix_null_incluse(matrice: pd.DataFrame) -> pd.DataFrame:
     return matrice
 
 
+def fix_rapatriement_frais_reels(matrice: pd.DataFrame) -> pd.DataFrame:
+    """Règle métier IMA : toute garantie rapatriement est aux frais réels."""
+    console.print("\n[bold]6. Rapatriement → Frais Réels (règle métier IMA)[/bold]")
+
+    mask = matrice["id_garantie"].str.contains("rapatriement", case=False, na=False)
+    total = mask.sum()
+
+    if total == 0:
+        console.print("  Aucune garantie rapatriement trouvée")
+        return matrice
+
+    plafond_col = "plafond_montant"
+    frais_reels_col = "plafond_frais_reels"
+
+    plafond_errone = mask & pd.to_numeric(matrice[plafond_col], errors="coerce").gt(0)
+    n_plafond = plafond_errone.sum()
+
+    frais_manquant = mask & (matrice[frais_reels_col] != True) & (matrice[frais_reels_col] != 1.0)
+    n_frais = frais_manquant.sum()
+
+    matrice.loc[plafond_errone, plafond_col] = pd.NA
+    matrice.loc[mask, frais_reels_col] = True
+
+    console.print(f"  {total} lignes rapatriement au total")
+    console.print(f"  [green]{n_plafond} plafonds chiffrés effacés → NaN[/green]")
+    console.print(f"  [green]{n_frais} lignes passées à plafond_frais_reels=True[/green]")
+
+    remaining = mask & pd.to_numeric(matrice[plafond_col], errors="coerce").gt(0)
+    console.print(f"  [green]✓ {remaining.sum()} plafonds chiffrés restants[/green]")
+
+    return matrice
+
+
 def main():
     dry_run = "--dry-run" in sys.argv
 
@@ -313,6 +347,9 @@ def main():
 
     # 5. Nettoyage est_incluse NaN → True
     matrice = fix_null_incluse(matrice)
+
+    # 6. Rapatriement → frais réels
+    matrice = fix_rapatriement_frais_reels(matrice)
 
     if dry_run:
         console.print(f"\n[yellow]Dry-run terminé.[/yellow]")
